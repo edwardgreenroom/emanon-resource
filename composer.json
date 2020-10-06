@@ -1,7 +1,7 @@
 {
     "name": "emanon/resource",
     "description": ":package_description",
-    "license": "license",
+    "license": "MIT",
     "authors": [
         {
             "name": "Edward CWH",
