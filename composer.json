@@ -1,0 +1,43 @@
+{
+    "name": "emanon/resource",
+    "description": ":package_description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Edward CWH",
+            "email": "edward@greenroom.com.my",
+            "homepage": "https://greenroom.com.my/"
+        }
+    ],
+    "homepage": "https://github.com/edwardgreenroom/emanon-resource",
+    "keywords": ["Laravel", "Resource"],
+    "require": {
+        "illuminate/support": "~5|~6|~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~8.0|~9.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3|~4|~5|~6",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Emanon\\Resource\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Emanon\\Resource\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Emanon\\Resource\\ResourceServiceProvider"
+            ],
+            "aliases": {
+                "Resource": "Emanon\\Resource\\Facades\\Resource"
+            }
+        }
+    }
+}
